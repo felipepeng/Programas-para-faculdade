@@ -99,42 +99,36 @@ para x de 2 ate 8 faca
 fimpara
 
 // [4,8] ate [1,8] x=16   ESQUERDA
-tmp<-12
 para x de 4 ate 1 passo -1 faca
      tmp<-tmp+1
      m[x,8]<-v[tmp]
 fimpara
 
 // [1,7] ate [1,2] x=22   SOBE
-tmp<-16
 para x de 7 ate 2 passo -1 faca
      tmp<-tmp+1
      m[1,x]<-v[tmp]
 fimpara
 
 // [2,2] ate [4,2] x=25   DIREITA
-tmp<-22
 para x de 2 ate 4 faca
      tmp<-tmp+1
      m[x,2]<-v[tmp]
 fimpara
 
 // [4,3] ate [4,7] x=30   DESCE
-tmp<-25
 para x de 3 ate 7 faca
      tmp<-tmp+1
      m[4,x]<-v[tmp]
 fimpara
 
 // [3,7] ate [2,7] x=32   ESQUERDA
-tmp<-30
 para x de 3 ate 2 passo -1 faca
      tmp<-tmp+1
      m[x,7]<-v[tmp]
 fimpara
 
 // [2,6] ate [2,3] x=36   SOBE
-tmp<-32
 para x de 6 ate 3 passo -1 faca
      tmp<-tmp+1
      m[2,x]<-v[tmp]
@@ -143,21 +137,14 @@ fimpara
 
 // [3,3]  x=37   DIREITA
 m[3,3]<-v[37]
+tmp<-tmp+1
 
 
-// [4,4] ate [4,6] x=40   DESCE
-tmp<-37
+// [3,4] ate [3,6] x=40   DESCE
 para x de 4 ate 6 faca
      tmp<-tmp+1
-     m[4,x]<-v[tmp]
+     m[3,x]<-v[tmp]
 fimpara
-
-
-
-
-
-
-
 
 fimprocedimento
 //==============================================================================
@@ -167,7 +154,6 @@ preencherVetor
 bubble_sorting
 matriz_espiral
 mostrar
-
 
 
 fimalgoritmo
